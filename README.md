@@ -1,5 +1,11 @@
 ## Hi there 👋
 
+I’m currently the Founding Engineer at HealthyMe AI, a NYC-based Healthcare AI startup building advanced computer vision models to assist practitioners in diagnosing dermatological diseases. 
+
+As the chief architect of the technical foundation of HealthyMe, I have worked to establish the platform's infrastructure from the ground up. This includes the development and organization of our extensive dataset of pathologically proven images, training all core AI models that bring our diagnostic technology to life, and engineering the pipeline that connects it directly to clinical EHR systems.
+
+In my career as a Machine Learning Engineer and Data Scientist, I have applied my skills and knowledge in ML, MLOps, and data analysis to various projects in scientific research, manufacturing, and healthcare. I have a master's degree in computational data science from Drexel University, where I learned advanced techniques and tools for data processing, modeling, and engineering.
+
 <!--
 **Curf/curf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
