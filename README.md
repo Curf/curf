@@ -6,6 +6,10 @@ As the chief architect of the technical foundation of HealthyMe, I have worked t
 
 In my career as a Machine Learning Engineer and Data Scientist, I have applied my skills and knowledge in ML, MLOps, and data analysis to various projects in scientific research, manufacturing, and healthcare. I have a master's degree in computational data science from Drexel University, where I learned advanced techniques and tools for data processing, modeling, and engineering.
 
+<p align="center">
+  <img src="./git_contributes.jpg" alt="External-Account Github Contributions">
+</p>
+
 <!--
 **Curf/curf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
