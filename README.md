@@ -14,7 +14,7 @@ In my career as a Machine Learning Engineer and Data Scientist, I have applied m
 - **Dermological Disease Classifier ([Overview of challenges and solutions](./case_studies/derm_classify_case_study.md))**
 
 <p align="center">
-  <img src="./git_contributes.jpg" alt="External-Account Github Contributions">
+  <img src="./resources/git_contributes.jpg" alt="External-Account Github Contributions">
 </p>
 
 <!--
