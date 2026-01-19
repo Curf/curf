@@ -11,13 +11,13 @@ In my career as a Machine Learning Engineer and Data Scientist, I have applied m
 
 - **Overview of HealthyMe Technical Work ([Founding Work and Achievements](./case_studies/technical_achievements.md))**
 
-**Full-Stack Work:**
+### Example Full-Stack Projects:
 
 - **Complete End-to-End system for automated diagnostic support within EMR  ([Infrastructure as code build](https://github.com/Curf/ai-ddx-assist-cdk-demo))**
 - **AI Inference Microservice ([Overview of a infernce microservice, part of ai-ddx-assist](./case_studies/AIGetInference_case_study.md))**
 - **Dermatology Annotation App ([Multi-User Dermatology Image Annotation Platform](./case_studies/annoation_app_case_study.md))**
 
-**Data/Machine Learning Work:**
+### Example Data/Machine Learning Projects:
 
 - **Dermological Disease Classification ([Overview of challenges and solutions](./case_studies/derm_classify_case_study.md))**
 
