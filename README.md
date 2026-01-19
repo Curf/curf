@@ -9,7 +9,7 @@ In my career as a Machine Learning Engineer and Data Scientist, I have applied m
 
 # Take a look at the amazing things I've built!
 
-- **Overview of HealthyMe ([Founding Work and Achievements](./case_studies/technical_achievements.md))**
+- **Overview of HealthyMe ([Founding Work and Achievements](./technical_achievements.md))**
 
 ### Example Full-Stack Projects:
 
