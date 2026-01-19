@@ -1,4 +1,4 @@
-# **End-to-End Data Pipeline for Dermatological Image Classification**
+# **End-to-End Pipeline for Dermatological Image Classification**
 
 **Domain:** Computer Vision, Healthcare, Data-Centric AI
 
@@ -19,10 +19,10 @@ flowchart TD
     A[Raw Pathology Images] --> B{Quality Gate}
 
     B -- Blurry / Dark / Low Contrast --> C[Discard Image]
-    B -- Passes Thresholds --> D[Clinical Classifier -Binary Model]
+    B -- Passes Thresholds --> D[Clinical Classifier-Binary Model]
 
-    D -- Non-Clinical Content -Paper, Floor, Vials) --> C
-    D -- Clinical Content --> E[Object Detection Lesion Locator]
+    D -- Non-Clinical Content -Paper, Floor, Vials --> C
+    D -- Clinical Content --> E[Object Detection-Lesion Locator]
 
     E --> F[Crop Region of Interest ROI]
     F --> G[Final Classification Model]
@@ -39,12 +39,12 @@ flowchart TD
 
 The initial dataset was constructed from historical pathology records and presented significant engineering hurdles:
 
-* **Noisy Labels:** Pathology reports were unstructured, containing misspellings, acronyms, and non-standard descriptions.  
-* **Extreme Class Imbalance:** The data followed the "long tail" distribution of diseases in the general population.  
-* **High Cardinality:** Initial mapping resulted in over 300 unique disease classes.  
-* **Poor Signal-to-Noise Ratio:**  
-  * **Artifacts:** Many images were blurry, overexposed, or too dark.  
-  * **Irrelevant Context:** Photos often included vials, paperwork, or floors instead of skin.  
+* **Noisy Labels:** Pathology reports were unstructured, containing misspellings, acronyms, and non-standard descriptions.
+* **Extreme Class Imbalance:** The data followed the "long tail" distribution of diseases in the general population.
+* **High Cardinality:** Initial mapping resulted in over 300 unique disease classes.
+* **Poor Signal-to-Noise Ratio:**
+  * **Artifacts:** Many images were blurry, overexposed, or too dark.
+  * **Irrelevant Context:** Photos often included vials, paperwork, or floors instead of skin.
   * **Scale Issues:** Small lesions on large body parts (e.g., a small spot on an ear) meant 90%+ of the pixel data was irrelevant background (hair, eyes, background).
 
 *Initial Result:* Standard transfer learning (ResNet, MobileNet) yielded poor results (Top-3/5 accuracy stalled at 40-50%).
@@ -55,24 +55,24 @@ To solve the model performance issues, I engineered a three-stage preprocessing 
 
 ### **Phase 1: Label Normalization & EDA**
 
-* Performed **Exploratory Data Analysis (EDA)** and text clustering on pathology reports to standardize labels.  
+* Performed **Exploratory Data Analysis (EDA)** and text clustering on pathology reports to standardize labels.
 * Collaborated with a dermatologist to correct clusters, reducing the target map from \~300 messy classes to \~100 distinct, clinically relevant classes.
 
 ### **Phase 2: The "Quality Gate" (Heuristics \+ ML)**
 
 I implemented a strict filter to reject images before they ever reached the training set.
 
-1. **Heuristic Metrics:** Calculated base image quality metrics (exposure, blur analysis) with hard thresholds.  
-2. **"Clinical Filter" Model:** Trained a custom binary classifier to distinguish between *Clinical* (skin) and *Non-Clinical* (objects) images.  
-   * **Data Strategy:** Leveraged open-source datasets (SKINCON, ISO, COCO) combined with internal hand-labeled data.  
+1. **Heuristic Metrics:** Calculated base image quality metrics (exposure, blur analysis) with hard thresholds.
+2. **"Clinical Filter" Model:** Trained a custom binary classifier to distinguish between *Clinical* (skin) and *Non-Clinical* (objects) images.
+   * **Data Strategy:** Leveraged open-source datasets (SKINCON, ISO, COCO) combined with internal hand-labeled data.
    * **Metric:** Achieved a **True Positive Rate (TPR) of 0.98**, ensuring the removal of noise even at the cost of some false negatives.
 
 ### **Phase 3: Intelligent Cropping (Region of Interest)**
 
 To address the "small lesion, large image" problem, I moved beyond simple resizing.
 
-* **Action:** Trained an Object Detection model to localize lesions within the full-body photographs.  
-* **Training Data:** Curated a set of \~5,000 images labeled by a physician.  
+* **Action:** Trained an Object Detection model to localize lesions within the full-body photographs.
+* **Training Data:** Curated a set of \~5,000 images labeled by a physician.
 * **Result:** Achieved **mAP@50 of \~55%**. While not state-of-the-art for general detection, this was sufficient to identify the lesion area and generate a cropped, focused image for the downstream classifier.
 
 Here’s the **cleaned and correctly formatted Markdown section** with the code placed in a proper code block and minor formatting fixes (no content changes, just correctness and readability).
@@ -122,6 +122,6 @@ def quality_gate(image_path, threshold=100.0):
 
 ## **6\. Results & Impact**
 
-* **Automated Curation:** Transformed a chaotic data dump into a structured, high-quality dataset, removing the need for manual review of every image.  
-* **Reusable Assets:** The "Clinical Filter" and "Lesion Cropper" were modularized, allowing them to be reused in future dermatology projects or different disease classifications.  
+* **Automated Curation:** Transformed a chaotic data dump into a structured, high-quality dataset, removing the need for manual review of every image.
+* **Reusable Assets:** The "Clinical Filter" and "Lesion Cropper" were modularized, allowing them to be reused in future dermatology projects or different disease classifications.
 * **Foundation for Success:** By ensuring inputs were focused and high-quality, we broke the 40-50% accuracy ceiling and established a reliable baseline for experimentation.
