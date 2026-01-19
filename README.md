@@ -9,11 +9,11 @@ In my career as a Machine Learning Engineer and Data Scientist, I have applied m
 
 # Take a look at the amazing things I've built!
 
-- **Overview of HealthyMe Technical Work ([Founding Work and Achievements](./case_studies/technical_achievements.md))**
+- **Overview of HealthyMe ([Founding Work and Achievements](./case_studies/technical_achievements.md))**
 
 ### Example Full-Stack Projects:
 
-- **Complete End-to-End system for automated diagnostic support within EMR  ([Infrastructure as code build](https://github.com/Curf/ai-ddx-assist-cdk-demo))**
+- **End-to-End system for dermatological diagnostic support within EMR  ([Infrastructure as code build](https://github.com/Curf/ai-ddx-assist-cdk-demo))**
 - **AI Inference Microservice ([Overview of a infernce microservice, part of ai-ddx-assist](./case_studies/AIGetInference_case_study.md))**
 - **Dermatology Annotation App ([Multi-User Dermatology Image Annotation Platform](./case_studies/annoation_app_case_study.md))**
 
