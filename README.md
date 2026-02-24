@@ -6,6 +6,7 @@ As the chief architect of the technical foundation of HealthyMe, I have worked t
 
 In my career as a Machine Learning Engineer and Data Scientist, I have applied my skills and knowledge in ML, MLOps, and data analysis to various projects in scientific research, manufacturing, and healthcare. I have a master's degree in computational data science from Drexel University, where I learned advanced techniques and tools for data processing, modeling, and engineering.
 
+Schedule some time to chat! https://calendly.com/clnjmurph/30min
 
 # Take a look at the amazing things I've built!
 
@@ -21,6 +22,9 @@ In my career as a Machine Learning Engineer and Data Scientist, I have applied m
 
 - **Dermological Disease Classification ([Overview of challenges and solutions](./case_studies/derm_classify_case_study.md))**
 
+---
+
+***Below is the contributions map for my professional github account:***
 <p align="center">
   <img src="./resources/git_contributes.jpg" alt="External-Account Github Contributions">
 </p>
