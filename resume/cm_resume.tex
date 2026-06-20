@@ -99,6 +99,9 @@
      \textbf{AI \& Machine Learning}{: LLMs (Fine-tuning, RAG, Evaluation, LangChain, LangGraph, Langfuse), Computer Vision, Deep Learning (PyTorch, TensorFlow), Model Explainability.}
     }
     \item{
+     \textbf{AI-Augmented Development}{: Agentic engineering workflows --- Claude Code, MCP servers, custom skills \& subagents --- to accelerate delivery and automate routine development.}
+    }
+    \item{
      \textbf{Full Stack \& Prototyping}{: TypeScript, React, Next.js (App Router), Python, FastAPI, gRPC, Streamlit, Docker, CI/CD.}
     }
     \item{
@@ -124,8 +127,8 @@
           {Shipped patient-facing features across a Next.js 14 (App Router) / React / TypeScript frontend and gRPC + FastAPI Python services, owning the full path from UI to LLM matching engine to EHR data layer.}
         \resumeItem{LLM Matching \& Evaluation}
           {Extended the clinical-trial eligibility pipeline with new LangGraph processing steps and Langfuse traceability improvements; built criteria-level evaluation harnesses and resolved structured-output failures to raise matching reliability.}
-        \resumeItem{Automation \& CI/CD}
-          {Built developer tooling and CI improvements --- multi-workspace local dev orchestration, gRPC test harnesses, and automated test gates --- to speed iteration and catch regressions before deploy.}
+        \resumeItem{CI/CD \& Deploy Safety}
+          {Designed a three-layer env-var safety system (typed schema $\to$ pre-deploy CI lint $\to$ boot-time validation) across the Python API and Next.js frontend, turning silent prod misconfigurations into build-time failures; standardized CI across four repos with a shared PR-review workflow, a blocking test gate, and Playwright post-deploy smoke tests.}
         \resumeItem{Cloud \& Reliability}
           {Operated the platform on GCP (Cloud Run, Firestore, Pub/Sub); diagnosed production incidents and hardened async matching against redelivery and race-condition failures, all under PHI-safe logging.}
       \resumeItemListEnd
