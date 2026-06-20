@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in Latex
+% Author : Colin Murphy
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\setlength{\footskip}{4.08003pt}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Command for items without a bold title
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Colin Murphy} & Email : \href{mailto:clnjmurph@gmail.com}{clnjmurph@gmail.com}\\
+  \href{https://www.linkedin.com/in/colin-j-murphy/}{https://www.linkedin.com/in/colin-j-murphy/ \faLinkedinSquare} & Mobile : +1(484)942-7123 \\
+  \href{https://github.com/Curf}{https://github.com/Curf \faGithubSquare} & \\
+\end{tabular*}
+
+%----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\small{Founding engineer and full-stack builder with 8+ years building end-to-end AI products for sensitive, data-intensive industries. Repeatedly the sole engineer behind LLM-powered healthcare platforms --- owning the full stack from React/Next.js frontends through Python LLM services and EHR/FHIR pipelines to cloud infrastructure (AWS \& GCP), with deep strengths in LLM evaluation and grounding for domain-specific accuracy.
+}
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{AI \& Machine Learning}{: LLMs (Fine-tuning, RAG, Evaluation, LangChain, Langfuse), Computer Vision, Deep Learning (PyTorch, TensorFlow), Model Explainability.}
+    }
+    \item{
+     \textbf{Full Stack \& Prototyping}{: TypeScript, React, Next.js (App Router), Python, FastAPI, gRPC, Streamlit, Docker, CI/CD.}
+    }
+    \item{
+     \textbf{Data Engineering}{: Unstructured \& Clinical Data Pipelines (PDF Parsing/OCR, FHIR/EHR), SQL, NoSQL, Big Data Management, ETL.}
+    }
+    \item{
+     \textbf{Cloud \& Infrastructure}{:
+     AWS \& GCP (Cloud Run, Firestore, Pub/Sub), MLOps, Model Serving, Model Lifecycle Management.}
+    }
+ \resumeSubHeadingListEnd
+ % Engineering Practices: Agile Methodologies, Technical Leadership, System Architecture, MLOps, Model Lifecycle Management.
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PACT}{New York, NY}
+      {Full-Stack AI Engineer (Contract)}{03/2026 -- 06/2026}
+      \resumeItemListStart
+        \resumeItemPlain{\textit{Sole engineer maintaining and extending a production LLM platform that matches patients to clinical trials, spanning a Next.js frontend and two Python backend services.}}
+        \resumeItem{Full-Stack Delivery}
+          {Shipped patient-facing features across a Next.js 14 (App Router) / React / TypeScript frontend and gRPC + FastAPI Python services, owning the full path from UI to LLM matching engine to EHR data layer.}
+        \resumeItem{LLM Matching \& Evaluation}
+          {Improved the clinical-trial eligibility pipeline (litellm / OpenAI), building criteria-level evaluation harnesses and resolving structured-output failures to raise matching reliability.}
+        \resumeItem{EHR Integration (FHIR)}
+          {Integrated FHIR R4 patient records via the Fasten Health API, normalizing clinical data into PostgreSQL for downstream matching.}
+        \resumeItem{Cloud \& Reliability}
+          {Operated the platform on GCP (Cloud Run, Firestore, Pub/Sub); diagnosed production incidents and hardened async matching against redelivery and race-condition failures, all under PHI-safe logging.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HealthyMe AI}{New York, NY}
+      {Founding Engineer / Head of Engineering}{10/2023 -- 02/2026}
+      \resumeItemListStart
+        \resumeItemPlain{\textit{Served as the sole engineer scaling technology from zero-to-MVP; currently leading a team of 4 to build next-gen decision support tools.}}
+        \resumeItem{LLM \& Reasoning Pipelines}
+          {Developed LLM pipelines using RAG and LangChain. Grounded model outputs in domain literature to provide accurate, well-supported answers for high-stakes clinical decision-making.}
+        \resumeItem{Unstructured Data Engineering}
+          {Built ingestion pipelines to parse, OCR, and extract insights from over 100,000+ unstructured PDF patient reports and 9 million images, transforming raw data into a structured knowledge base.}
+        \resumeItem{Data Annotation Infrastructure}
+          {Designed and built the core web platform for data acquisition, establishing the database structures required to coordinate inputs from a distributed team of global experts.}
+        \resumeItem{SOTA Model Development}
+          {Trained a custom classification model capable of predicting over 60 distinct dermatological diseases. Achieved performance metrics surpassing current best-in-class numbers in peer-reviewed literature.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Pall Corporation}{New York, NY}
+      {Machine Learning Engineer}{01/2022 -- 08/2023}
+      \resumeItemListStart
+        \resumeItemPlain{Established model lifecycle and deployment scheme for machine learning applications, moving research prototypes into live workflows.}
+        \resumeItemPlain{Developed computer vision tools for automated characterization, moving R\&D concepts into manufacturing reality.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Johnson \& Johnson}{West Chester, PA}
+      {Scientist / Data Scientist}{08/2016 -- 12/2021}
+      \resumeItemListStart
+        \resumeItemPlain{Led an interdisciplinary team applying data science to complex manufacturing systems.}
+        \resumeItemPlain{Built time-series and forecasting models to predict process failures and optimize high-value manufacturing decisions from semi-structured data.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Drexel University}{Philadelphia, PA}
+      {M.Sc. Data Science}{06/2022}
+      
+    \resumeSubheading
+      {Temple University}{Philadelphia, PA}
+      {B.Sc. Chemistry $|$ Phi Beta Kappa}{05/2016}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
