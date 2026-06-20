@@ -6,6 +6,10 @@ Only facts here (plus the corpus: `cm_resume.tex`, `technical_achievements.md`,
 
 ## Verified facts
 
+- Authored on 1 peer-reviewed paper (chemistry, ~2016 era) plus 1 arXiv
+  preprint; older, not ML. Has *a* publication record but not an active ML one.
+  [confirmed by Colin 2026-06-20]
+
 <!-- Atomic, true statements about Colin's experience confirmed during a review
      loop. Add a source pointer when one exists. Example:
 - Led a team of 4 at HealthyMe AI (10/2023–02/2026). [cm_resume.tex] -->
@@ -18,6 +22,11 @@ Only facts here (plus the corpus: `cm_resume.tex`, `technical_achievements.md`,
   clinical-trial matcher, raising matching reliability." -->
 
 ## Never claim
+
+- Do NOT claim 5+ first-author ML papers or an active ML publication record.
+  Do NOT bridge "surpassed peer-reviewed literature" into "published research"
+  — beating published benchmarks is not publishing. (Real: 1 chem paper + 1
+  arXiv preprint, dated.)
 
 <!-- Claims Colin rejected as false or overclaimed. Checked before every
      proposal; never resurface these. Example:
