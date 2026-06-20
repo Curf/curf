@@ -40,6 +40,16 @@ you append it to `## Verified facts` so it's reusable next time.
    (lowercase, kebab-case); if you can't parse company/role, ask. Write the JD text +
    source URL + date to `resume/tailored/<slug>/job.md`.
 2. **Extract requirements** from the JD: key skills, keywords, responsibilities, seniority.
+   - **Optional company lookup:** if the JD alone leaves the company's domain, product,
+     or stack genuinely unclear *and* that would change how you emphasize Colin's
+     experience, do a quick web lookup (firecrawl-search / firecrawl-scrape, or
+     WebSearch) — e.g. "is this a payer, provider, or pharma?", "what's their stack?".
+     Keep it to 1-2 lookups; skip it when the JD is already clear. Note in `job.md`
+     what you looked up and what you learned.
+   - **Boundary:** company research informs only *which of Colin's real facts to
+     surface and what vocabulary to use*. It is NOT a ground-truth source — it can
+     never add, justify, or inflate a claim about Colin. The gate sources in the
+     Core Principle remain the only basis for anything written on the resume.
 3. **Load truth:** read the four ground-truth sources above.
 4. **Plan edits** against the master `resume/cm_resume.tex`:
    - reorder bullets so the most JD-relevant surface first
