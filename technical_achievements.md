@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-Founding Engineer and de facto Co-Founder with 8+ years of software engineering experience. As the first technical hire and sole engineer for 1.5 years, I built the entire AI diagnostic platform from concept to production, leading all technical architecture, ML development, and infrastructure decisions. I delivered a production-grade healthcare AI system serving dermatology clinics, demonstrating full-stack capabilities from data engineering to cloud architecture and ML operations — and proved the ability to single-handedly architect complex enterprise systems while navigating healthcare regulations and securing EHR partnerships.
+Founding Engineer with 8+ years of software engineering experience. As the first technical hire and sole engineer for 1.5 years, I built the entire AI diagnostic platform from concept to production, leading all technical architecture, ML development, and infrastructure decisions. I delivered a production-grade healthcare AI system serving dermatology clinics, demonstrating full-stack capabilities from data engineering to cloud architecture and ML operations — and proved the ability to single-handedly architect complex enterprise systems while navigating healthcare regulations and securing EHR partnerships.
 
 ---
 
@@ -16,7 +16,7 @@ Founding Engineer and de facto Co-Founder with 8+ years of software engineering 
 - **Designed** a complex multi-step polling mechanism to overcome EHR API limitations (no webhook support)
 - **Implemented** Infrastructure as Code (IaC) using AWS CDK for reproducible, scalable deployments
 - **Built** real-time monitoring system processing clinic encounters every few seconds with sub-second latency
-- **Achieved** 99.9% uptime in a production environment serving dermatology clinics
+- **Sustained** reliable uptime in a production environment serving dermatology clinics
 
 ### Enterprise EHR Integration
 
@@ -31,7 +31,7 @@ Founding Engineer and de facto Co-Founder with 8+ years of software engineering 
 
 ### Large-Scale Data Infrastructure
 
-- **Processed** millions of patient records, visits, and medical images from production EHR systems
+- **Processed** 9M+ medical images and 100K+ patient reports from production EHR systems
 - **Built** highly parallel crawler system to overcome API throttling and extract maximum data
 - **Designed** data lake architecture handling pathology images with metadata
 - **Implemented** efficient data pipelines processing 3M+ additional pathology results
@@ -93,7 +93,7 @@ Founding Engineer and de facto Co-Founder with 8+ years of software engineering 
 - **Served as sole technical lead** for all engineering functions during first 1.5 years, making every architectural and implementation decision
 - **Scaled technical leadership** to manage and mentor team of 3-4 engineers (AI Engineer, Software Engineer, Data Engineer) as company grew
 - **Single-handedly developed** MVP from concept to production while managing all technical stakeholder relationships
-- **Established** company's technical foundation enabling Series A readiness and commercial scaling
+- **Established** the company's technical foundation, supporting seed-stage fundraising and commercial scaling
 - **Built and led** engineering culture, hiring practices, and technical roadmap as team expanded
 
 ### Complex Problem Resolution
@@ -166,7 +166,7 @@ Founding Engineer and de facto Co-Founder with 8+ years of software engineering 
 
 ### Technical Achievements
 
-- **Scaled** from prototype to production handling millions of patient records
+- **Scaled** from prototype to production handling 9M+ images and 100K+ patient reports
 - **Improved** model accuracy from 40-50% to 70-80% through systematic optimization
 - **Built** systems processing 3M+ pathology results with 98% quality filtering accuracy
 - **Reduced** manual data processing time through automation

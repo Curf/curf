@@ -22,18 +22,11 @@ Schedule some time to chat! https://calendly.com/clnjmurph/30min
 
 - **End-to-End system for dermatological diagnostic support within EMR  ([Infrastructure as code build](https://github.com/Curf/ai-ddx-assist-cdk-demo))**
 - **AI Inference Microservice ([Overview of an inference microservice, part of ai-ddx-assist](./case_studies/AIGetInference_case_study.md))**
-- **Dermatology Annotation App ([Multi-User Dermatology Image Annotation Platform](./case_studies/annoation_app_case_study.md))**
+- **Dermatology Annotation App ([Multi-User Dermatology Image Annotation Platform](./case_studies/annotation_app_case_study.md))**
 
 ### Example Data/Machine Learning Projects:
 
 - **Dermatological Disease Classification ([Overview of challenges and solutions](./case_studies/derm_classify_case_study.md))**
-
----
-
-***Below is the contributions map for my professional github account:***
-<p align="center">
-  <img src="./resources/git_contributes.jpg" alt="External-Account Github Contributions">
-</p>
 
 <!--
 **Curf/curf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

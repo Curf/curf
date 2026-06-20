@@ -1,8 +1,10 @@
 # AIGetInference: Medical Image Diagnostic Workflow
 
+*A retrospective deep-dive on a microservice I built as Founding Engineer / Head of Engineering at HealthyMe AI (2023–2026), a NYC dermatology computer-vision AI startup.*
+
 ## Executive Summary
 
-The *AIGetInference* Lambda function represents a critical component in a diagnostic imaging pipeline. This serverless microservice orchestrates the automated analysis of medical images to deliver evidence-based diagnostic suggestions to clinicians at the point of care. By leveraging cloud-native architecture and advanced AI models, the system enhances clinical decision-making while maintaining high performance and reliability standards.
+The *AIGetInference* Lambda function was a critical component in the diagnostic imaging pipeline I built. This serverless microservice orchestrated the automated analysis of medical images to deliver evidence-based diagnostic suggestions to clinicians at the point of care. By leveraging cloud-native architecture and AI models, the system enhanced clinical decision-making while maintaining strong performance and reliability.
 
 ```mermaid
 flowchart TD
@@ -49,25 +51,25 @@ flowchart TD
 
 ## Overview and Purpose
 
-The GetDdxAssistInference service addresses the growing need for AI-assisted medical diagnostics in clinical settings. It serves as a bridge between raw medical imaging data and actionable clinical insights by processing images through specialized AI models and enhancing the outputs with contextual medical recommendations.
+The GetDdxAssistInference service addressed the growing need for AI-assisted medical diagnostics in clinical settings. It served as a bridge between raw medical imaging data and actionable clinical insights, processing images through specialized AI models and enriching the outputs with contextual medical recommendations.
 
 ## Technical Implementation
 
-The service employs a serverless AWS Lambda architecture triggered by S3 events when new medical images are uploaded. This event-driven approach ensures timely processing of diagnostic images while maintaining cost efficiency through on-demand execution.
+The service used a serverless AWS Lambda architecture triggered by S3 events when new medical images were uploaded. This event-driven approach ensured timely processing of diagnostic images while maintaining cost efficiency through on-demand execution.
 
 ## Key Capabilities
 
 ### Specialized Model Selection
 
-The system dynamically routes images to specialized AI models based on image metadata and clinical context. This intelligent routing mechanism differentiates between widespread and localized conditions, optimizing analysis precision.
+The system dynamically routed images to specialized AI models based on image metadata and clinical context. This routing mechanism differentiated between widespread and localized conditions to optimize analysis precision.
 
 ### Precise Region Detection
 
-For conditions requiring localized analysis, the service employs an Object Detection Model to isolate regions of interest, enhancing diagnostic accuracy by focusing model attention on relevant anatomical structures.
+For conditions requiring localized analysis, the service used an object detection model to isolate regions of interest, improving diagnostic accuracy by focusing model attention on relevant anatomical structures.
 
 ### Clinical Context Enhancement
 
-Raw model outputs are enriched through a Large Language Model (LLM) pipeline that translates technical findings into clinically relevant recommendations, including possible diagnoses, suggested follow-up tests, and treatment considerations.
+Raw model outputs were enriched through a Large Language Model (LLM) pipeline that translated technical findings into clinically relevant recommendations, including possible diagnoses, suggested follow-up tests, and treatment considerations.
 
 ## Integration Points
 
@@ -78,13 +80,13 @@ Raw model outputs are enriched through a Large Language Model (LLM) pipeline tha
 
 ## Business Impact
 
-This service delivers substantial value by:
+This service was designed to deliver value by:
 
 - Reducing time-to-diagnosis for clinicians reviewing medical images
-- Providing consistent second opinions across various medical specialties
+- Providing consistent second opinions across medical specialties
 - Supporting less experienced practitioners with AI-backed insights
 - Creating structured data from unstructured medical images for downstream analytics
 
 ## Operational Considerations
 
-The service is designed with reliability as a core principle, featuring comprehensive error handling, detailed operational logging, and performance metrics to ensure consistent service delivery in critical healthcare environments.
+I designed the service with reliability as a core principle, featuring comprehensive error handling, detailed operational logging, and performance metrics to support consistent service delivery in a healthcare environment.

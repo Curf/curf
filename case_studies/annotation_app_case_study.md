@@ -1,8 +1,10 @@
 # Data Annotation Application: Multi-User Dermatology Image Annotation Platform
 
+*A retrospective deep-dive on a platform I built as Founding Engineer / Head of Engineering at HealthyMe AI (2023–2026), a NYC dermatology computer-vision AI startup.*
+
 ## Executive Summary
 
-This case study details the design and implementation of a high-throughput dermatology image annotation platform that significantly increased annotation efficiency. The system enables dermatologists to classify skin conditions and provide rich-text descriptions through a streamlined workflow with quality control measures. As the architect and technical lead, I designed the complete system architecture and directed the development team while personally implementing the database layer using Flyway for migration management. The platform demonstrates my ability to lead full-stack projects that solve complex domain-specific problems while prioritizing user experience and system efficiency.
+This case study details the design and implementation of a high-throughput dermatology image annotation platform that significantly increased annotation efficiency. The system enabled dermatologists to classify skin conditions and provide rich-text descriptions through a streamlined workflow with quality control measures. As the architect and technical lead, I designed the complete system architecture and directed the development team while personally implementing the database layer using Flyway for migration management. The platform demonstrates my ability to lead full-stack projects that solve complex domain-specific problems while prioritizing user experience and system efficiency.
 
 ## Introduction & Background
 
@@ -35,7 +37,7 @@ Dermatological image analysis requires expert annotation for both clinical decis
 
 ## Workflow Logic
 
-The annotation platform implements a structured workflow optimized for dermatology image annotation with built-in quality control and AI-assisted features:
+The annotation platform implemented a structured workflow optimized for dermatology image annotation, with built-in quality control and AI-assisted features:
 
 ```mermaid
 stateDiagram-v2
@@ -96,37 +98,37 @@ stateDiagram-v2
 
 1. **Administrative Preparation**
 
-   - Admin uploads dermatology images via dashboard, organizing by classification
-   - Creates work rules with limit settings to control annotation volume (cost management)
-   - Implements priority structure to ensure critical cases are handled first
-   - System generates work items in 'new' status based on these rules
+   - Admin uploaded dermatology images via the dashboard, organized by classification
+   - Created work rules with limit settings to control annotation volume (cost management)
+   - Set a priority structure to ensure critical cases were handled first
+   - System generated work items in 'new' status based on these rules
 2. **Annotation Assignment**
 
-   - Dermatologist logs in and system locks available items (status → 'in_progress')
-   - System associates the work item with the specific annotator
+   - Dermatologist logged in and the system locked available items (status → 'in_progress')
+   - System associated the work item with the specific annotator
 3. **AI-Assisted Preprocessing**
 
-   - Image passes through production AI pipeline:
+   - The image passed through the production AI pipeline:
      - External API for image cropping/standardization
-     - Custom-trained Sagemaker model for preliminary classification
-     - LLM API integration for generating "provider recommended next steps"
-   - Results stored in ai_suggestion table and presented to annotator as starting point
+     - Custom-trained SageMaker model for preliminary classification
+     - LLM API integration for generating "provider-recommended next steps"
+   - Results were stored in the ai_suggestion table and presented to the annotator as a starting point
 4. **Annotation Process**
 
-   - Annotator reviews and edits AI-generated suggestions as needed
-   - Changes saved to annotation_revision table with proper versioning
-   - Option to reject problematic images (records in work_item_flag table)
-   - Upon completion, status changes to 'review'
+   - Annotator reviewed and edited AI-generated suggestions as needed
+   - Changes were saved to the annotation_revision table with proper versioning
+   - Option to reject problematic images (recorded in the work_item_flag table)
+   - Upon completion, status changed to 'review'
 5. **Quality Control Review**
 
-   - QC specialist reviews completed annotations
-   - Can either approve (status → 'done') or request revisions (status → 'edits_requested')
-   - If revisions needed, work item returns only to original annotator
-   - Each revision stored with sequential revision_seq tracking
+   - QC specialist reviewed completed annotations
+   - Could either approve (status → 'done') or request revisions (status → 'edits_requested')
+   - If revisions were needed, the work item returned only to the original annotator
+   - Each revision was stored with sequential revision_seq tracking
 6. **Continuous Improvement**
 
-   - Flagged images processed by backend cleaner for dataset quality maintenance
-   - Annotation quality metrics tracked for annotator performance evaluation
+   - Flagged images were processed by a backend cleaner for dataset quality maintenance
+   - Annotation quality metrics were tracked for annotator performance evaluation
 
 ## Core Features & Functionality
 
@@ -325,14 +327,14 @@ router.post('/tasks/:task_id/submit', authenticate, async (req, res) => {
 ### Data Protection Strategy
 
 - **Privacy by Design**: System designed with no patient PII exposure within the application
-- **Authentication**: Google OAuth implementation for secure user identity verification
+- **Authentication**: Google OAuth for secure user identity verification
 - **Authorization**: Role-based access control for annotators, reviewers, and administrators
-- **Audit Trail**: Comprehensive activity logging of all annotation actions with timestamps and user attribution
+- **Audit Trail**: Comprehensive activity logging of all annotation actions, with timestamps and user attribution
 
 ### Compliance Measures
 
 - **Medical Data Handling**: Ensured compliance with medical data regulations through proper separation of identifiers
-- **User Accountability**: Each annotation action traced to specific users for quality assurance
+- **User Accountability**: Each annotation action traced to a specific user for quality assurance
 - **Versioning**: Complete revision history maintained for all annotations, preserving the full edit history
 
 ## Performance Optimization
@@ -372,7 +374,7 @@ router.post('/tasks/:task_id/submit', authenticate, async (req, res) => {
 
 ### System Reliability
 
-- **Error Tracking**: Integration with third-party logging services for error aggregation
+- **Error Tracking**: Integration with a third-party logging service for error aggregation
 - **Alert System**: Developer notifications for critical system errors or anomalies
 - **Performance Monitoring**: Continuous tracking of response times and system resource utilization
 
@@ -400,7 +402,9 @@ router.post('/tasks/:task_id/submit', authenticate, async (req, res) => {
 - **Documentation**: Comprehensive user guides and workflow documentation
 - **Continuous Learning**: Periodic feedback sessions to refine the annotation process
 
-## Future Roadmap
+## Planned Roadmap
+
+At the time, the roadmap I had scoped for the platform included:
 
 ### Technical Improvements
 
@@ -410,7 +414,7 @@ router.post('/tasks/:task_id/submit', authenticate, async (req, res) => {
 
 ### Feature Expansion
 
-- **Additional Annotation Types**: Support for bounding box annotations and temporal data selection
+- **Additional Annotation Types**: Support for bounding-box annotations and temporal data selection
 - **Workflow Customization**: Configurable workflows for different annotation needs
 - **Advanced Analytics**: More sophisticated reporting on annotation quality and efficiency
 
@@ -418,4 +422,4 @@ router.post('/tasks/:task_id/submit', authenticate, async (req, res) => {
 
 This annotation platform demonstrates my ability to lead the end-to-end design and implementation of complex, domain-specific applications. By taking ownership of the architecture and database design while directing the development team, I delivered a solution that significantly improved annotation throughput for dermatology images.
 
-The project showcases my technical expertise in database design, API development, and workflow optimization, alongside leadership skills in translating domain requirements into technical specifications and guiding implementation. The successful deployment and adoption of this platform highlight my capability to deliver full-stack solutions that provide meaningful business value through technical innovation.
+The project showcases my technical expertise in database design, API development, and workflow optimization, alongside the leadership skills to translate domain requirements into technical specifications and guide implementation. The deployment and adoption of this platform highlight my capability to deliver full-stack solutions that provide meaningful business value through technical innovation.

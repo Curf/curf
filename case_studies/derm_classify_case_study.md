@@ -1,5 +1,7 @@
 # **End-to-End Pipeline for Dermatological Image Classification**
 
+*A retrospective deep-dive on work I led as Founding Engineer / Head of Engineering at HealthyMe AI (2023–2026), a NYC dermatology computer-vision AI startup.*
+
 **Domain:** Computer Vision, Healthcare, Data-Centric AI
 
 **Tech Stack:** Python, OpenCV, PyTorch/TensorFlow, Scikit-Learn
@@ -45,7 +47,7 @@ The initial dataset was constructed from historical pathology records and presen
 * **Poor Signal-to-Noise Ratio:**
   * **Artifacts:** Many images were blurry, overexposed, or too dark.
   * **Irrelevant Context:** Photos often included vials, paperwork, or floors instead of skin.
-  * **Scale Issues:** Small lesions on large body parts (e.g., a small spot on an ear) meant 90%+ of the pixel data was irrelevant background (hair, eyes, background).
+  * **Scale Issues:** Small lesions on large body parts (e.g., a small spot on an ear) meant 90%+ of the pixel data was irrelevant background (hair, eyes, surrounding skin).
 
 *Initial Result:* Standard transfer learning (ResNet, MobileNet) yielded poor results (Top-3/5 accuracy stalled at 40-50%).
 
@@ -64,7 +66,7 @@ I implemented a strict filter to reject images before they ever reached the trai
 
 1. **Heuristic Metrics:** Calculated base image quality metrics (exposure, blur analysis) with hard thresholds.
 2. **"Clinical Filter" Model:** Trained a custom binary classifier to distinguish between *Clinical* (skin) and *Non-Clinical* (objects) images.
-   * **Data Strategy:** Leveraged open-source datasets (SKINCON, ISO, COCO) combined with internal hand-labeled data.
+   * **Data Strategy:** Leveraged open-source datasets (SKINCON, ISIC, COCO) combined with internal hand-labeled data.
    * **Metric:** Achieved a **True Positive Rate (TPR) of 0.98**, ensuring the removal of noise even at the cost of some false negatives.
 
 ### **Phase 3: Intelligent Cropping (Region of Interest)**
@@ -74,10 +76,6 @@ To address the "small lesion, large image" problem, I moved beyond simple resizi
 * **Action:** Trained an Object Detection model to localize lesions within the full-body photographs.
 * **Training Data:** Curated a set of \~5,000 images labeled by a physician.
 * **Result:** Achieved **mAP@50 of \~55%**. While not state-of-the-art for general detection, this was sufficient to identify the lesion area and generate a cropped, focused image for the downstream classifier.
-
-Here’s the **cleaned and correctly formatted Markdown section** with the code placed in a proper code block and minor formatting fixes (no content changes, just correctness and readability).
-
----
 
 ## **5. Technical Deep Dive: Blur Detection**
 
