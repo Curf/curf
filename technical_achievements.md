@@ -1,8 +1,10 @@
 # Technical Achievements & Portfolio Highlights
 
+*A retrospective deep-dive on my work as Founding Engineer / Head of Engineering at HealthyMe AI (2023–2026), a NYC dermatology computer-vision AI startup.*
+
 ## Executive Summary
 
-Founding Engineer and de facto Co-Founder with 7+ years of software engineering experience. As the first technical hire and sole engineer for 1.5 years, built the entire AI diagnostic platform from concept to production, leading all technical architecture, ML development, and infrastructure decisions. Successfully delivered a production-grade healthcare AI system serving dermatology clinics, demonstrating full-stack capabilities from data engineering to cloud architecture and ML operations. Proven ability to single-handedly architect complex enterprise systems while navigating healthcare regulations and securing EHR partnerships.
+Founding Engineer and de facto Co-Founder with 8+ years of software engineering experience. As the first technical hire and sole engineer for 1.5 years, I built the entire AI diagnostic platform from concept to production, leading all technical architecture, ML development, and infrastructure decisions. I delivered a production-grade healthcare AI system serving dermatology clinics, demonstrating full-stack capabilities from data engineering to cloud architecture and ML operations — and proved the ability to single-handedly architect complex enterprise systems while navigating healthcare regulations and securing EHR partnerships.
 
 ---
 
@@ -14,7 +16,7 @@ Founding Engineer and de facto Co-Founder with 7+ years of software engineering 
 - **Designed** a complex multi-step polling mechanism to overcome EHR API limitations (no webhook support)
 - **Implemented** Infrastructure as Code (IaC) using AWS CDK for reproducible, scalable deployments
 - **Built** real-time monitoring system processing clinic encounters every few seconds with sub-second latency
-- **Achieved** 99.9% uptime in production environment serving dermatology clinics
+- **Achieved** 99.9% uptime in a production environment serving dermatology clinics
 
 ### Enterprise EHR Integration
 
@@ -134,7 +136,7 @@ Founding Engineer and de facto Co-Founder with 7+ years of software engineering 
 ### Cloud & Infrastructure
 
 - **AWS**: Lambda, DynamoDB, S3, EventBridge, Step Functions, CDK, CloudWatch
-- **Infrastructure as Code**: AWS CDK, Terraform concepts
+- **Infrastructure as Code**: AWS CDK, Terraform (working knowledge)
 - **Monitoring**: CloudWatch, custom logging solutions
 
 ### Backend & Data
@@ -142,13 +144,13 @@ Founding Engineer and de facto Co-Founder with 7+ years of software engineering 
 - **Languages**: Python, JavaScript/Node.js, SQL
 - **Databases**: PostgreSQL, DynamoDB, data lake architectures
 - **APIs**: REST, GraphQL, healthcare-specific APIs (FHIR)
-- **Data Processing**: Pandas, NumPy, Apache Spark concepts
+- **Data Processing**: Pandas, NumPy, Apache Spark (working knowledge)
 
 ### Machine Learning
 
 - **Frameworks**: PyTorch, TensorFlow, scikit-learn
 - **Computer Vision**: OpenCV, custom CNN architectures, transfer learning
-- **MLOps**: Weights & Biases, MLflow concepts, Docker
+- **MLOps**: Weights & Biases, Docker, MLflow (working knowledge)
 - **Foundation Models**: SOTA model integration and fine-tuning
 
 ### Frontend & Tools
@@ -167,14 +169,14 @@ Founding Engineer and de facto Co-Founder with 7+ years of software engineering 
 - **Scaled** from prototype to production handling millions of patient records
 - **Improved** model accuracy from 40-50% to 70-80% through systematic optimization
 - **Built** systems processing 3M+ pathology results with 98% quality filtering accuracy
-- **Reduced** manual data processing time by through automation
-- **Currently in active production** serving dermatology clinics with live patient data
+- **Reduced** manual data processing time through automation
+- **Deployed** to active production serving dermatology clinics with live patient data
 
 ### Business Impact
 
 - **Founded** technical foundation for AI healthcare startup from ground zero
 - **Attracted** major EHR partnership (ModMed) through technical excellence and vision
-- **Established** technical foundation enabling funding-round  readiness and commercial expansion
+- **Established** technical foundation enabling funding-round readiness and commercial expansion
 - **Successfully deployed** system to production clinics with active real-world usage
 
 ---
@@ -185,8 +187,8 @@ Founding Engineer and de facto Co-Founder with 7+ years of software engineering 
 
 - **Invented** polling-based EHR integration architecture overcoming API limitations
 - **Developed** multi-stage image quality filtering system achieving 98% TPR
-- **Created** hybrid human-AML annotation workflow accelerating data labeling 10x
-- **Designed** lesion localization system improving diagnostic accuracy 30%
+- **Created** hybrid human-AI annotation workflow accelerating data labeling by 10x
+- **Designed** lesion localization system improving diagnostic accuracy by 30%
 - **Built** scalable ML inference platform for healthcare applications
 
 ---
