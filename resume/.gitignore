@@ -1,3 +1,6 @@
+# Tailored per-job resume variants + outputs (also uploaded to Drive)
+tailored/
+
 # LaTeX build artifacts
 *.aux
 *.log
