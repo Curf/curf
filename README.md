@@ -21,15 +21,12 @@
 
 ## Hi there 👋
 
-I'm a full-stack AI/ML engineer with a healthcare focus, and I'm **currently open to new opportunities** — especially in AI/ML and full-stack roles working with sensitive-data and healthcare domains.
+Full-stack AI/ML engineer. Currently open to opportunities in AI/ML and healthcare tech.
 
-What I keep coming back to: being the sole/founding engineer behind LLM- and computer-vision-powered healthcare platforms, end to end — frontend → AI services → data/EHR integration → cloud.
-
-Most recently, I was the full-stack engineer on a production **LLM platform that matches patients to clinical trials**, working solo across a Next.js 14 / React / TypeScript frontend and two Python backends (a gRPC matching API and a FastAPI EHR-ingestion service). That work spanned LLM-based eligibility matching and evaluation (litellm/OpenAI), FHIR R4 / EHR data integration, and GCP (Cloud Run, Firestore, Pub/Sub).
-
-Before that, I **founded the engineering at HealthyMe AI**, a NYC-based healthcare-AI startup building computer-vision models to help practitioners diagnose dermatological disease. As the first technical hire and chief architect, I built the platform from the ground up — the dataset platform of pathologically proven images, all core AI models, and the pipeline connecting our diagnostic technology directly to clinical EHR systems — and grew the technical foundation as the team scaled.
-
-Across my career as a Machine Learning Engineer and Data Scientist, I've applied ML, MLOps, and data engineering to projects in scientific research, manufacturing, and healthcare. I hold a master's degree in computational data science from Drexel University.
+- 🔭 Building LLM & CV platforms end-to-end (frontend → AI → EHR)
+- 🏥 Founded engineering at HealthyMe AI (dermatology CV startup)
+- 🧠 Production LLM platform for clinical trial matching at PACT
+- 📊 M.Sc. Data Science — Drexel University
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
@@ -66,12 +63,3 @@ Across my career as a Machine Learning Engineer and Data Scientist, I've applied
 
 📄 **[Full Technical Portfolio](./technical_achievements.md)** — Deep dive into architecture, data engineering, ML/CV, full-stack, and leadership
 
----
-
-<p align="center">
-  📄 <a href="./resume/cm_resume.pdf"><strong>Resume</strong></a>
-  &nbsp;&middot;&nbsp;
-  📅 <a href="https://calendly.com/clnjmurph/30min"><strong>Schedule a Chat</strong></a>
-  &nbsp;&middot;&nbsp;
-  🌐 <a href="https://curf.github.io/"><strong>curf.github.io</strong></a>
-</p>
