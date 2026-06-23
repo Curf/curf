@@ -45,7 +45,6 @@ Full-stack AI/ML engineer. Currently open to opportunities in AI/ML and healthca
 
 | Project | Stack | Highlights |
 |---------|-------|------------|
-| **[Clinical Trial LLM Platform](https://github.com/Curf/ai-ddx-assist-cdk-demo)** | Next.js, Python, gRPC, GCP | LLM-based patient-trial matching, FHIR R4 EHR integration |
 | **[AI Inference Microservice](./case_studies/AIGetInference_case_study.md)** | Lambda, SageMaker, LLM | Serverless medical image diagnostic inference |
 | **[Annotation Platform](./case_studies/annotation_app_case_study.md)** | React, FastAPI, PostgreSQL | Multi-user dermatology image annotation with AI assistance |
 | **[Disease Classification](./case_studies/derm_classify_case_study.md)** | PyTorch, MLflow | Broke 40-50% ceiling on noisy dermatological classification |
