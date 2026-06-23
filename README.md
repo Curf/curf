@@ -24,9 +24,9 @@
 Full-stack AI/ML engineer. Currently open to opportunities in AI/ML and healthcare tech.
 
 - 🔭 Building LLM & CV platforms end-to-end (frontend → AI → EHR)
-- 🏥 Founded engineering at HealthyMe AI (dermatology CV startup)
-- 🧠 Production LLM platform for clinical trial matching at PACT
-- 📊 M.Sc. Data Science — Drexel University
+- 🏥 Founding Engineer (computer vision, health tech)
+- 🧠 Production LLM workflows
+- 📊 M.Sc. Data Science / Machine Learning — Drexel University (2022)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
