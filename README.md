@@ -1,6 +1,46 @@
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=22&duration=3500&pause=600&color=1A4A2E&center=true&vCenter=true&width=480&lines=Full-Stack+AI%2FML+Engineer;LLM+%26+Computer+Vision;Healthcare+%26+EHR+Integration;Open+to+New+Opportunities" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <a href="https://curf.github.io/">
+    <img src="https://img.shields.io/badge/curf.github.io-1A4A2E?style=for-the-badge&logo=githubpages&logoColor=white" alt="Website" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Curf?tab=followers">
+    <img src="https://img.shields.io/github/followers/Curf?label=Follow&style=social" alt="GitHub followers" />
+  </a>
+  <a href="https://linkedin.com/in/colin-murphy-66a298111">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+  </a>
+  <a href="https://calendly.com/clnjmurph/30min">
+    <img src="https://img.shields.io/badge/Schedule%20a%20Chat-1A4A2E?style=for-the-badge&logo=calendly&logoColor=white" alt="Calendly" />
+  </a>
+  <a href="./resume/cm_resume.pdf">
+    <img src="https://img.shields.io/badge/PDF%20Resume-6E0D25?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white" alt="GCP" />
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white" alt="LangChain" />
+</p>
+
+---
+
 ## Hi there 👋
 
-I’m a full-stack AI/ML engineer with a healthcare focus, and I’m **currently open to new opportunities** — especially in AI/ML and full-stack roles working with sensitive-data and healthcare domains.
+I'm a full-stack AI/ML engineer with a healthcare focus, and I'm **currently open to new opportunities** — especially in AI/ML and full-stack roles working with sensitive-data and healthcare domains.
 
 What I keep coming back to: being the sole/founding engineer behind LLM- and computer-vision-powered healthcare platforms, end to end — frontend → AI services → data/EHR integration → cloud.
 
@@ -8,37 +48,38 @@ Most recently, I was the full-stack engineer on a production **LLM platform that
 
 Before that, I **founded the engineering at HealthyMe AI**, a NYC-based healthcare-AI startup building computer-vision models to help practitioners diagnose dermatological disease. As the first technical hire and chief architect, I built the platform from the ground up — the dataset platform of pathologically proven images, all core AI models, and the pipeline connecting our diagnostic technology directly to clinical EHR systems — and grew the technical foundation as the team scaled.
 
-Across my career as a Machine Learning Engineer and Data Scientist, I’ve applied ML, MLOps, and data engineering to projects in scientific research, manufacturing, and healthcare. I hold a master’s degree in computational data science from Drexel University.
+Across my career as a Machine Learning Engineer and Data Scientist, I've applied ML, MLOps, and data engineering to projects in scientific research, manufacturing, and healthcare. I hold a master's degree in computational data science from Drexel University.
 
-📄 **Resume:** [cm_resume.pdf](./resume/cm_resume.pdf)
+---
 
-Schedule some time to chat! https://calendly.com/clnjmurph/30min
+## 📊 GitHub Stats
 
-# Take a look at the amazing things I've built!
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Curf&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1A4A2E&icon_color=6E0D25" />
+  <img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=Curf&theme=github-dark&hide_border=true&background=0d1117&stroke=1A4A2E&ring=1A4A2E&fire=6E0D25" />
+  <br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Curf&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1A4A2E" />
+</p>
 
-- **Overview of HealthyMe ([Founding Work and Achievements](./technical_achievements.md))**
+---
 
-### Example Full-Stack Projects:
+## 🚀 Featured Work
 
-- **End-to-End system for dermatological diagnostic support within EMR  ([Infrastructure as code build](https://github.com/Curf/ai-ddx-assist-cdk-demo))**
-- **AI Inference Microservice ([Overview of an inference microservice, part of ai-ddx-assist](./case_studies/AIGetInference_case_study.md))**
-- **Dermatology Annotation App ([Multi-User Dermatology Image Annotation Platform](./case_studies/annotation_app_case_study.md))**
+| Project | Stack | Highlights |
+|---------|-------|------------|
+| **[Clinical Trial LLM Platform](https://github.com/Curf/ai-ddx-assist-cdk-demo)** | Next.js, Python, gRPC, GCP | LLM-based patient-trial matching, FHIR R4 EHR integration |
+| **[AI Inference Microservice](./case_studies/AIGetInference_case_study.md)** | Lambda, SageMaker, LLM | Serverless medical image diagnostic inference |
+| **[Annotation Platform](./case_studies/annotation_app_case_study.md)** | React, FastAPI, PostgreSQL | Multi-user dermatology image annotation with AI assistance |
+| **[Disease Classification](./case_studies/derm_classify_case_study.md)** | PyTorch, MLflow | Broke 40-50% ceiling on noisy dermatological classification |
 
-### Example Data/Machine Learning Projects:
+📄 **[Full Technical Portfolio](./technical_achievements.md)** — Deep dive into architecture, data engineering, ML/CV, full-stack, and leadership
 
-- **Dermatological Disease Classification ([Overview of challenges and solutions](./case_studies/derm_classify_case_study.md))**
+---
 
-<!--
-**Curf/curf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  📄 <a href="./resume/cm_resume.pdf"><strong>Resume</strong></a>
+  &nbsp;&middot;&nbsp;
+  📅 <a href="https://calendly.com/clnjmurph/30min"><strong>Schedule a Chat</strong></a>
+  &nbsp;&middot;&nbsp;
+  🌐 <a href="https://curf.github.io/"><strong>curf.github.io</strong></a>
+</p>
