@@ -41,17 +41,6 @@ Full-stack AI/ML engineer. Currently open to opportunities in AI/ML and healthca
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white" alt="LangChain" />
 </p>
 
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Curf&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1A4A2E&icon_color=6E0D25" />
-  <img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=Curf&theme=github-dark&hide_border=true&background=0d1117&stroke=1A4A2E&ring=1A4A2E&fire=6E0D25" />
-</p>
-
----
-
 ## 🚀 Featured Work
 
 | Project | Stack | Highlights |
