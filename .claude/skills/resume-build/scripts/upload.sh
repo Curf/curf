@@ -2,7 +2,12 @@
 # upload.sh — copy a tailored resume PDF to personal Google Drive via rclone.
 #
 # Usage: upload.sh <path/to/cm_resume.pdf> <slug>
-#   -> uploads to  gdrive-personal:Resumes/<slug>.pdf
+#   -> delivered filename is  cm-resume-<YYYY-MM-DD>.pdf  (NEVER the company name,
+#      so the file Colin attaches to an application carries no per-company tell).
+#   -> writes a local copy   <pdf-dir>/cm-resume-<YYYY-MM-DD>.pdf
+#   -> uploads to            gdrive-personal:Resumes/<slug>/cm-resume-<YYYY-MM-DD>.pdf
+#      (the company slug lives ONLY in a private Drive subfolder, never on the
+#       file itself; the subfolder also stops same-day variants colliding.)
 #
 # Uses an explicit rclone remote ("gdrive-personal"), NEVER gcloud — keeps the
 # personal Drive account isolated from the machine's work gcloud auth.
@@ -22,6 +27,11 @@ if [[ -z "$PDF" || -z "$SLUG" || ! -f "$PDF" ]]; then
   echo "usage: upload.sh <path/to/file.pdf> <slug>  (pdf must exist)" >&2
   exit 1
 fi
+
+# Neutral, dated delivery name — no company/role on the file the recruiter sees.
+DATE="$(date +%F)"
+OUT_NAME="cm-resume-${DATE}.pdf"
+LOCAL_COPY="$(cd "$(dirname "$PDF")" && pwd)/${OUT_NAME}"
 
 print_setup() {
   cat >&2 <<'EOF'
@@ -52,9 +62,13 @@ if ! rclone listremotes 2>/dev/null | grep -qx "${REMOTE}:"; then
   exit 3
 fi
 
-# copyto (not copy) so the Drive filename is the slug — a plain copy into the
-# folder would land every job as cm_resume.pdf and overwrite the previous one.
-DEST="${REMOTE}:${FOLDER}/${SLUG}.pdf"
-rclone copyto "$PDF" "$DEST"
+# Local delivery copy with the neutral dated name (kept next to the build).
+cp "$PDF" "$LOCAL_COPY"
+echo "local   -> $LOCAL_COPY"
+
+# copyto (not copy) so the Drive object is named exactly cm-resume-<date>.pdf;
+# the company slug is the parent folder only, never part of the filename.
+DEST="${REMOTE}:${FOLDER}/${SLUG}/${OUT_NAME}"
+rclone copyto "$LOCAL_COPY" "$DEST"
 echo "uploaded -> $DEST"
 exit 0

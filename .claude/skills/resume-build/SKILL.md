@@ -68,6 +68,11 @@ you append it to `## Verified facts` so it's reusable next time.
    `bash .claude/skills/resume-build/scripts/build.sh resume/tailored/<slug>/cm_resume.tex`.
    Exit 2 = over one page → trim a bullet and rebuild. Never ship >1 page.
 7. **Upload:** `bash .claude/skills/resume-build/scripts/upload.sh resume/tailored/<slug>/cm_resume.pdf <slug>`.
+   The delivered file is named `cm-resume-<YYYY-MM-DD>.pdf` (neutral — never the
+   company/role, so the attached file carries no per-application tell); the slug
+   is only the private Drive subfolder. Lands a local copy at
+   `resume/tailored/<slug>/cm-resume-<date>.pdf` and uploads to
+   `gdrive-personal:Resumes/<slug>/cm-resume-<date>.pdf`.
    Exit 3 = rclone not set up → show Colin the setup steps the script printed; do NOT
    claim the upload succeeded.
 8. **Record:** write `resume/tailored/<slug>/changes.md` (what changed vs master + the
